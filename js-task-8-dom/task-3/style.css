@@ -1,0 +1,31 @@
+ul {
+    list-style: none;
+}
+
+
+/* .lights {
+    width: 45px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #eee;
+} */
+
+.lights__item {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #eee;
+    margin-bottom: 5px;
+}
+
+.lights__item--red.active {
+    background-color: red;
+}
+
+.lights__item--yellow.active {
+    background-color: green;
+}
+
+.lights__item--green.active {
+    background-color: yellow;
+}
