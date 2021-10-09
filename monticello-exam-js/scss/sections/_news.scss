@@ -1,0 +1,158 @@
+.news {
+    overflow: hidden;
+    padding: 180px 0 210px;
+    background-image: url(../image/news-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include breakpoint($mobile-bp) {
+        padding: 130px 0;
+    }
+    .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .arrow-next {
+        right: -60px;
+        background-image: url(../image/arrow-right.png);
+    }
+    .arrow-prev {
+        background-image: url(../image/arrow-left.png);
+        left: -60px;
+    }
+    &__dots {
+        position: absolute;
+        bottom: -56px;
+        left: 50%;
+        transform: translateX(-50%);
+        li {
+            margin-right: 40px;
+        }
+    }
+    &__title {
+        margin-bottom: 100px;
+        font-size: 44px;
+        font-family: $gothambook-regular, $ss;
+        color: $white;
+        text-transform: uppercase;
+        line-height: 46px;
+        text-align: center;
+        position: relative;
+        @include breakpoint($mobile-bp) {
+            margin-bottom: 50px;
+            font-size: 30px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+            width: 100px;
+            height: 2px;
+            background-color: $white;
+        }
+    }
+    .slick-track {
+        display: flex;
+        align-items: stretch;
+        height: 100%;
+    }
+    &__slider {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 -15px;
+    }
+    &__item {
+        height: 100%;
+        width: 33%;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        margin: 0 15px;
+        &:hover {
+            .news__item-img {
+                &:before {
+                    opacity: 1;
+                }
+            }
+        }
+        &-img {
+            position: relative;
+            &:before {
+                content: '';
+                display: block;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-image: url(../image/plus.png);
+                opacity: 0;
+                transition: opacity .2s linear;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+        &-body {
+            display: flex;
+            flex-flow: column;
+            padding: 20px 20px 30px;
+        }
+        &-title {
+            font-size: 22px;
+            font-family: $gothambook-medium, $ss;
+            color: $dark-blue;
+            text-transform: uppercase;
+            line-height: 34px;
+            margin-bottom: 10px;
+        }
+        &-text {
+            font-size: 18px;
+            font-family: $opensans-regular, $ss;
+            color: $second-dark-blue;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+        &-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 20px;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+        &-bottom {
+            display: flex;
+            align-items: center;
+        }
+        &-footer {
+            display: flex;
+            flex-direction: column;
+        }
+        &-name {
+            font-family: $gothambook-regular, $ss;
+            font-size: 18px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: $dark-blue;
+            margin-bottom: 10px;
+        }
+        &-date {
+            font-family: $gothambook-regular, $ss;
+            font-size: 14px;
+            line-height: 16px;
+            color: $blue;
+        }
+    }
+}

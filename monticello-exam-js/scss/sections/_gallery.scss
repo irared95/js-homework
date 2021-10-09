@@ -1,0 +1,100 @@
+.gallery {
+    padding: 180px 0 140px;
+    @include breakpoint($mobile-bp) {
+        padding: 100px 0 75px;
+    }
+    &__title {
+        color: $dark-blue;
+        font-family: $gothambook-bold, $ss;
+        line-height: 46px;
+        font-size: 44px;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        margin-bottom: 100px;
+        @include breakpoint($mobile-bp) {
+            margin-bottom: 50px;
+            font-size: 30px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+            width: 100px;
+            height: 2px;
+            background-color: $dark-blue;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        img {
+            display: block;
+            width: 100%;
+        }
+        @include breakpoint($mobile-bp) {
+            flex-direction: column;
+        }
+    }
+    &__btn {
+        text-align: center;
+    }
+    &__left {
+        width: calc(50% - 5px);
+        @include breakpoint($mobile-bp) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+    }
+    &__right {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: calc(50% - 5px);
+        margin-bottom: -10px;
+        @include breakpoint($mobile-bp) {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+    &__item {
+        margin-bottom: 10px;
+        width: calc(50% - 5px);
+        @include breakpoint($mobile-bp) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .no-scope {
+        position: relative;
+        &:hover {
+            &:before {
+                opacity: 1;
+            }
+        }
+        &:before {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-image: url(../image/no-scope.png);
+            opacity: 0;
+            transition: opacity .2s linear;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

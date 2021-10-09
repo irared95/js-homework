@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Gothambook Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/GothamBook/Gotham-Bold.woff2) format('woff2'), url(../fonts/GothamBook/Gotham-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Gothambook Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/GothamBook/Gotham-Medium.woff2) format('woff2'), url(../fonts/GothamBook/Gotham-Medium.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Gothambook Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/GothamBook/Gotham-Regular.woff2) format('woff2'), url(../fonts/GothamBook/Gotham-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Opensans Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Opensans/Opensans-Regular.woff2) format('woff2'), url(../fonts/Opensans/Opensans-Regular.woff) format('woff'), url(../fonts/Opensans/Opensans-Regular.ttf) format('truetype');
+}
