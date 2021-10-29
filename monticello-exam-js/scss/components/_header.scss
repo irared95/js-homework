@@ -1,0 +1,114 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 50px 0;
+    z-index: 1;
+    @include breakpoint($tablet-bp) {
+        padding: 15px 0;
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        @include breakpoint($tablet-bp) {
+            flex-wrap: wrap;
+        }
+    }
+    &__logo {
+        @include breakpoint($tablet-bp) {
+            width: 50%;
+            justify-content: flex-end;
+        }
+        @include breakpoint($mobile-bp) {
+            width: 100%;
+            margin: 0 auto 10px;
+            max-width: 200px;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+    &__socials {
+        @include breakpoint($tablet-bp) {
+            width: 50%;
+            justify-content: flex-end;
+        }
+        @include breakpoint($mobile-bp) {
+            margin-bottom: 10px;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}
+
+.nav {
+    margin: 0 10px 0 20px;
+    @include breakpoint($tablet-bp) {
+        order: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px
+    }
+    @include breakpoint($mobile-bp) {
+        margin: 0 7px 20px;
+    }
+    &__menu {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        @include breakpoint($tablet-bp) {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__item {
+        margin-right: 84px;
+        @include breakpoint($tablet-bp) {
+            margin-right: 40px;
+        }
+        @include breakpoint($mobile-bp) {
+            margin-right: 22px;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        position: relative;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: $gothambook-regular, $ss;
+        color: $white;
+        line-height: 18px;
+        white-space: nowrap;
+        @include breakpoint($mobile-bp) {
+            font-size: 12px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -14px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            border: 1px solid $white;
+            transition: background-color .2s linear;
+        }
+        &:hover {
+            &:before {
+                background-color: $white;
+            }
+        }
+    }
+}

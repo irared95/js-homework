@@ -1,0 +1,114 @@
+.contacts {
+    padding: 90px 60px 80px;
+    position: absolute;
+    top: -300px;
+    margin: 0 auto;
+    max-width: 770px;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: $white;
+    @include breakpoint($mobile-bp) {
+        margin-bottom: 40px;
+        padding: 30px 20px;
+        width: 96%;
+        position: initial;
+        transform: none;
+    }
+    &__title {
+        color: $dark-blue;
+        font-family: $gothambook-bold, $ss;
+        line-height: 46px;
+        font-size: 44px;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        margin-bottom: 50px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+            width: 100px;
+            height: 2px;
+            background-color: $dark-blue;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        @include breakpoint($mobile-bp) {
+            display: flex;
+            flex-direction: column;
+        }
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__left {
+        width: calc(50% - 10px);
+        @include breakpoint($mobile-bp) {
+            margin-bottom: 30px;
+            width: 100%;
+        }
+    }
+    &__right {
+        width: calc(50% - 10px);
+        @include breakpoint($mobile-bp) {
+            width: 100%;
+        }
+    }
+    &__field {
+        margin-bottom: 40px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__input {
+        width: 100%;
+        font-size: 15px;
+        padding-bottom: 18px;
+        font-family: $gothambook-medium, $ss;
+        color: $dark-blue;
+        line-height: 17px;
+        border: 0;
+        border-bottom: 1px solid $dark-blue;
+        transition: all 0.2s linear;
+        &:focus {
+            opacity: 0.5;
+        }
+        &::placeholder {
+            font-size: 15px;
+            font-family: $gothambook-medium, $ss;
+            color: $dark-blue;
+            line-height: 17px;
+        }
+    }
+    &__item {
+        font-family: $gothambook-medium, $ss;
+        color: $dark-blue;
+        font-size: 18px;
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+        &-link {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+    &__address {
+        display: block;
+        font-style: normal;
+    }
+    &__btn {
+        &-wrap {
+            text-align: right;
+        }
+    }
+}

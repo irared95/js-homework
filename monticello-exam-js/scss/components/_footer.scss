@@ -1,0 +1,58 @@
+.footer {
+    position: relative;
+    background-image: url(../image/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+    @include breakpoint($mobile-bp) {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0 100px;
+    }
+    .container {
+        @include breakpoint($mobile-bp) {
+            order: 1;
+            text-align: center;
+        }
+    }
+    &__wrapper {
+        max-width: 770px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        @include breakpoint($mobile-bp) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__bottom {
+        font-size: 14px;
+        font-family: $gothambook-regular, $ss;
+        color: $white;
+        line-height: 16px;
+        @include breakpoint($mobile-bp) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__copyright {
+        position: relative;
+        &:not(:last-child) {
+            margin-right: 40px;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 2px;
+                right: -24px;
+                display: block;
+                width: 1px;
+                height: 10px;
+                background-color: $white;
+            }
+        }
+    }
+}

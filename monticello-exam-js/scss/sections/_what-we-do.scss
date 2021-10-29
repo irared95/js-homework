@@ -1,0 +1,147 @@
+.what-we-do {
+    overflow: hidden;
+    padding: 100px 0 140px;
+    @include breakpoint($mobile-bp) {
+        padding: 70px 0 100px;
+    }
+    &__title {
+        font-size: 44px;
+        font-family: $gothambook-medium, $ss;
+        color: $dark-blue;
+        text-transform: uppercase;
+        line-height: 46px;
+        text-align: center;
+        margin-bottom: 170px;
+        @include breakpoint($mobile-bp) {
+            margin-bottom: 50px;
+            font-size: 30px;
+        }
+    }
+    &__btn {
+        margin-bottom: 55px;
+    }
+    &__item {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        &:not(:last-child) {
+            margin-bottom: 200px;
+            @include breakpoint($mobile-bp) {
+                margin-bottom: 100px;
+            }
+        }
+        @include breakpoint($mobile-bp) {
+            display: flex;
+            flex-direction: column;
+        }
+        &-item {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+        &-info {
+            width: 40%;
+            @include breakpoint($mobile-bp) {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        &-img {
+            position: relative;
+            width: 54%;
+            @include breakpoint($mobile-bp) {
+                width: 100%;
+                order: -1;
+            }
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                @include breakpoint($mobile-bp) {
+                    content: none;
+                }
+            }
+            img {
+                position: relative;
+                display: block;
+                width: 100%;
+                z-index: 1;
+            }
+            &--left {
+                &:before {
+                    transform: translate(-260px, -70px);
+                    background-color: $blue;
+                }
+            }
+            &--right {
+                &:before {
+                    transform: translate(260px, -70px);
+                    background-color: $purple;
+                }
+            }
+        }
+        &-subtitle {
+            font-size: 22px;
+            font-family: $gothambook-regular, $ss;
+            color: $dark-blue;
+            text-transform: uppercase;
+            line-height: 24px;
+            @include breakpoint($mobile-bp) {
+                text-align: center;
+                display: block;
+                padding: 15px 0;
+            }
+        }
+        &-title {
+            font-size: 44px;
+            font-family: $gothambook-bold, $ss;
+            color: $dark-blue;
+            text-transform: uppercase;
+            line-height: 50px;
+            margin-bottom: 40px;
+            @include breakpoint($mobile-bp) {
+                text-align: center;
+                font-size: 30px;
+                line-height: 35px;
+            }
+        }
+        &-text {
+            font-size: 18px;
+            font-family: $opensans-regular, $ss;
+            color: $second-dark-blue;
+            line-height: 28px;
+            margin-bottom: 35px;
+            @include breakpoint($mobile-bp) {
+                text-align: justify;
+            }
+        }
+        &-address {
+            padding-left: 22px;
+            position: relative;
+            font-family: $opensans-regular, $ss;
+            color: $dark-blue;
+            @include breakpoint($mobile-bp) {
+                text-align: left;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 18px;
+                width: 10px;
+                background-image: url(../image/place.svg);
+                background-color: transparent;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

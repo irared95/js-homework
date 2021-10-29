@@ -1,0 +1,39 @@
+.dots {
+    display: flex;
+    justify-content: center;
+    li {
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .slick-active {
+        button {
+            background-color: $white;
+        }
+    }
+    button {
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        border: 2px solid $white;
+        cursor: pointer;
+        font-size: 0;
+        line-height: 0;
+        transition: all 0.2s linear;
+        &:hover {
+            background-color: $white;
+        }
+    }
+    &--vertical {
+        flex-direction: column;
+        li {
+            margin-right: 0;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    &__slider {
+        text-align: center;
+        &-content {
+            width: 90%;
+        }
+        &-item {
+            &.slick-slide {
+                display: flex;
+            }
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            min-height: 100vh;
+            background-image: url(../image/bg-header.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &-title {
+            font-size: 80px;
+            font-family: $gothambook-medium, $ss;
+            color: $white;
+            line-height: 82px;
+            text-transform: uppercase;
+            margin-bottom: 35px;
+            @include breakpoint($tablet-bp) {
+                margin-bottom: 24px;
+                font-size: 50px;
+                line-height: 56px;
+            }
+            @include breakpoint($mobile-bp) {
+                margin-bottom: 10px;
+                font-size: 34px;
+                line-height: 36px;
+            }
+        }
+        &-subtitle {
+            font-size: 18px;
+            font-family: $gothambook-regular, $ss;
+            color: $white;
+            text-transform: uppercase;
+            line-height: 20px;
+            letter-spacing: 4px;
+            @include breakpoint($tablet-bp) {
+                font-size: 16px;
+            }
+        }
+    }
+    &__dots {
+        position: absolute;
+        right: 35px;
+        top: 50%;
+        transform: translateY(-50%);
+        @include breakpoint($mobile-bp) {
+            top: auto;
+            bottom: 14px;
+            right: 20px;
+        }
+    }
+}
+
+.scroll {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 45px;
+}

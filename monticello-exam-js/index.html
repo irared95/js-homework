@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Architecture</title>
+</head>
+
+<body>
+    <main class="main">
+        <header class="header js-header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a class="header__logo logo">
+                        <img src="./image/logo.png" alt="logo">
+                    </a>
+                    <nav class="nav js-nav-menu">
+                        <ul class="nav__menu">
+                            <li class="nav__item">
+                                <a class="nav__link scroll--js" href="#hero">ABOUT US</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link scroll--js" href="#what-we-do">PROJECTS</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link scroll--js" href="#news">NEWS</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link scroll--js" href="#contacts">CONTACT</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="header__socials socials">
+                        <li class="socials__item">
+                            <a href="#" target="_blank" class="socials__link">
+                                <svg viewbox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" target="_blank" class="socials__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
+                                  <path d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" target="_blank" class="socials__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path d="M505 257c0 34.8-.7 69.7.2 104.5 1.5 61.6-37.2 109.2-86.5 130.4-19.8 8.5-40.6 13-62.1 13-67.3.1-134.7 1-202-.3-50.7-1-92.4-22.2-122.3-64-15.7-22-23.2-47-23.2-74.1v-215c0-58.5 28.5-99.4 79.1-126C110.2 14 134.1 9.1 159 9c65.3 0 130.7-.4 196 .2 50.7.4 93 19.8 124.2 60.6 17.4 22.8 25.8 49 25.8 77.8V257zm-459 0v110c0 16.4 3.8 31.8 12.3 45.7 22.3 36.5 56 54.3 97.8 55 67.1 1 134.3.4 201.5.2 16.5 0 32.5-3.4 47.4-10.5 40.6-19.4 63.3-50.3 63.1-96.7-.4-71-.1-142-.1-213 0-20.1-5.7-38.5-17.6-54.7-23-31.1-54.8-46.4-92.8-46.8-67-.8-134-.3-201-.2-14.3 0-28.1 2.9-41.5 7.9-36.8 13.7-71 48.4-69.4 99.5 1.2 34.6.3 69.1.3 103.6z"/><path d="M257.6 363c-64.5 0-116.5-51.4-116.6-115.4-.1-63 52.3-114.6 116.4-114.6 64.3-.1 116.5 51.4 116.6 114.9 0 63.4-52.1 115-116.4 115.1zm0-37c43.9 0 79.5-35.1 79.4-78.3-.1-42.8-35.7-77.8-79.4-77.8-43.9 0-79.7 34.9-79.7 78 .1 43.2 35.8 78.2 79.7 78.1zM387.5 98c13.5 0 24.5 11.5 24.5 25.6-.1 14.1-11.2 25.5-24.7 25.4-13.3-.1-24.2-11.5-24.2-25.3C363 109.6 374 98 387.5 98z"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section id="#hero" class="hero">
+            <div class="hero__slider hero__slider--js">
+                <div class="hero__slider-item">
+                    <div class="hero__slider-content">
+                        <h1 class="hero__slider-title">3 SIMPLE &amp; MODERN</h1>
+                        <p class="hero__slider-subtitle">WE MAKE THE WORLD'S BEAUTIFUL EVERY DAY</p>
+                    </div>
+                </div>
+                <div class="hero__slider-item">
+                    <div class="hero__slider-content">
+                        <h1 class="hero__slider-title">2 SIMPLE &amp; MODERN</h1>
+                        <p class="hero__slider-subtitle">WE MAKE THE WORLD'S BEAUTIFUL EVERY DAY</p>
+                    </div>
+                </div>
+                <div class="hero__slider-item">
+                    <div class="hero__slider-content">
+                        <h1 class="hero__slider-title">1 SIMPLE &amp; MODERN</h1>
+                        <p class="hero__slider-subtitle">WE MAKE THE WORLD'S BEAUTIFUL EVERY DAY</p>
+                    </div>
+                </div>
+            </div>
+            <a class="scroll scroll--js" href="#what-we-do">
+                <img class="scroll__img" src="./image/arrow-bottom.png" alt="arrow-bottom">
+            </a>
+        </section>
+        <section id="what-we-do" class="what-we-do">
+            <div class="container">
+                <div class="what-we-do__wrapper">
+                    <h2 class="what-we-do__title">WHAT WE DO</h2>
+                    <div class="what-we-do__list">
+                        <div class="what-we-do__item">
+                            <div class="what-we-do__item-img what-we-do__item-img--left">
+                                <img src="./image/trade-center.png" alt="building">
+                            </div>
+                            <div class="what-we-do__item-info">
+                                <span class="what-we-do__item-subtitle">ONE WORLD</span>
+                                <h3 class="what-we-do__item-title">TRADE CENTER</h3>
+                                <div class="what-we-do__item-text">
+                                    <p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+                                </div>
+                                <a href="#" target="blank" class="what-we-do__btn btn">MORE DETAILS</a>
+                                <address class="what-we-do__item-address">New York City, United States - 1776 feet</address>
+                            </div>
+                        </div>
+                        <div class="what-we-do__item">
+                            <div class="what-we-do__item-info">
+                                <span class="what-we-do__item-subtitle">INTERNATIONAL</span>
+                                <h3 class="what-we-do__item-title">COMMERCE CENTRE</h3>
+                                <div class="what-we-do__item-text">
+                                    <p>Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+                                </div>
+                                <a href="#" target="blank" class="what-we-do__btn btn">MORE DETAILS</a>
+                                <address class="what-we-do__item-address">Hong Kong - 1588 Feet</address>
+                            </div>
+                            <div class="what-we-do__item-img what-we-do__item-img--right">
+                                <img src="./image/commerce-centre.png" alt="building">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="news" class="news">
+            <div class="container">
+                <h2 class="news__title">LATEST NEWS</h2>
+                <div class="news__wrapper">
+                    <div class="news__slider news__slider--js">
+                        <a href="#" class="news__item">
+                            <div class="news__item-img">
+                                <img src="./image/news-img-1.png" alt="building">
+                            </div>
+                            <div class="news__item-body">
+                                <h3 class="news__item-title">See The Unmatched Beauty Of The Great.</h3>
+                                <div class="news__item-text">
+                                    <p>Free directories: directories are perfect for customers that are... searching for</p>
+                                </div>
+                                <div class="news__item-bottom">
+                                    <div class="news__item-avatar">
+                                        <img src="./image/avatar-1.png" alt="avatar">
+                                    </div>
+                                    <div class="news__item-footer">
+                                        <span class="news__item-name">ISAAC DUNN</span>
+                                        <time class="news__item-date">09 Feb 2017</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="news__item">
+                            <div class="news__item-img">
+                                <img src="./image/news-img-2.png" alt="building">
+                            </div>
+                            <div class="news__item-body">
+                                <h3 class="news__item-title">EFFECTIVE ADVERTISING POINTERS.</h3>
+                                <div class="news__item-text">
+                                    <p>Having a home based business is a wonderful asset to your life...</p>
+                                </div>
+                                <div class="news__item-bottom">
+                                    <div class="news__item-avatar">
+                                        <img src="./image/avatar-2.png" alt="avatar">
+                                    </div>
+                                    <div class="news__item-footer">
+                                        <span class="news__item-name">DOMINIC FREEMAN</span>
+                                        <time class="news__item-date">24 Apr 2017</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="news__item">
+                            <div class="news__item-img">
+                                <img src="./image/news-img-3.png" alt="building">
+                            </div>
+                            <div class="news__item-body">
+                                <h3 class="news__item-title">HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                                <div class="news__item-text">
+                                    <p>There are many things that are important to catalog design....</p>
+                                </div>
+                                <div class="news__item-bottom">
+                                    <div class="news__item-avatar">
+                                        <img src="./image/avatar-3.png" alt="avatar">
+                                    </div>
+                                    <div class="news__item-footer">
+                                        <span class="news__item-name">ALICE WARD</span>
+                                        <time class="news__item-date">30 Dec 2017</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="news__item">
+                            <div class="news__item-img">
+                                <img src="./image/news-img-2.png" alt="building">
+                            </div>
+                            <div class="news__item-body">
+                                <h3 class="news__item-title">EFFECTIVE ADVERTISING POINTERS.</h3>
+                                <div class="news__item-text">
+                                    <p>Having a home based business is a wonderful asset to your life...</p>
+                                </div>
+                                <div class="news__item-bottom">
+                                    <div class="news__item-avatar">
+                                        <img src="./image/avatar-2.png" alt="avatar">
+                                    </div>
+                                    <div class="news__item-footer">
+                                        <span class="news__item-name">DOMINIC FREEMAN</span>
+                                        <time class="news__item-date">24 Apr 2017</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="news__item">
+                            <div class="news__item-img">
+                                <img src="./image/news-img-3.png" alt="building">
+                            </div>
+                            <div class="news__item-body">
+                                <h3 class="news__item-title">HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                                <div class="news__item-text">
+                                    <p>There are many things that are important to catalog design....</p>
+                                </div>
+                                <div class="news__item-bottom">
+                                    <div class="news__item-avatar">
+                                        <img src="./image/avatar-3.png" alt="avatar">
+                                    </div>
+                                    <div class="news__item-footer">
+                                        <span class="news__item-name">ALICE WARD</span>
+                                        <time class="news__item-date">30 Dec 2017</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="container">
+                <h2 class="gallery__title">GALLERY</h2>
+                <div class="gallery__list">
+                    <a href="#" class="gallery__left no-scope">
+                        <img src="./image/gallery-img-1.png" alt="building">
+                    </a>
+                    <div class="gallery__right">
+                        <a href="#" class="gallery__item no-scope">
+                            <img src="./image/gallery-img-2.png" alt="building">
+                        </a>
+                        <a href="#" class="gallery__item no-scope">
+                            <img src="./image/gallery-img-3.png" alt="building">
+                        </a>
+                        <a href="#" class="gallery__item no-scope">
+                            <img src="./image/gallery-img-4.png" alt="building">
+                        </a>
+                        <a href="#" class="gallery__item no-scope">
+                            <img src="./image/gallery-img-5.png" alt="building">
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery__btn">
+                    <a href="#" target="blank" class="btn ">SEE MORE</a>
+                </div>
+            </div>
+        </section>
+        <section class="map"></section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__top">
+                        <a href="#" class="footer__logo logo">
+                            <img src="./image/logo.png" alt="logo">
+                        </a>
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <a href="#" target="_blank" class="socials__link">
+                                    <svg viewbox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z"/>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" target="_blank" class="socials__link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512">
+                                        <path d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z"/>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" target="_blank" class="socials__link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path d="M505 257c0 34.8-.7 69.7.2 104.5 1.5 61.6-37.2 109.2-86.5 130.4-19.8 8.5-40.6 13-62.1 13-67.3.1-134.7 1-202-.3-50.7-1-92.4-22.2-122.3-64-15.7-22-23.2-47-23.2-74.1v-215c0-58.5 28.5-99.4 79.1-126C110.2 14 134.1 9.1 159 9c65.3 0 130.7-.4 196 .2 50.7.4 93 19.8 124.2 60.6 17.4 22.8 25.8 49 25.8 77.8V257zm-459 0v110c0 16.4 3.8 31.8 12.3 45.7 22.3 36.5 56 54.3 97.8 55 67.1 1 134.3.4 201.5.2 16.5 0 32.5-3.4 47.4-10.5 40.6-19.4 63.3-50.3 63.1-96.7-.4-71-.1-142-.1-213 0-20.1-5.7-38.5-17.6-54.7-23-31.1-54.8-46.4-92.8-46.8-67-.8-134-.3-201-.2-14.3 0-28.1 2.9-41.5 7.9-36.8 13.7-71 48.4-69.4 99.5 1.2 34.6.3 69.1.3 103.6z"/><path d="M257.6 363c-64.5 0-116.5-51.4-116.6-115.4-.1-63 52.3-114.6 116.4-114.6 64.3-.1 116.5 51.4 116.6 114.9 0 63.4-52.1 115-116.4 115.1zm0-37c43.9 0 79.5-35.1 79.4-78.3-.1-42.8-35.7-77.8-79.4-77.8-43.9 0-79.7 34.9-79.7 78 .1 43.2 35.8 78.2 79.7 78.1zM387.5 98c13.5 0 24.5 11.5 24.5 25.6-.1 14.1-11.2 25.5-24.7 25.4-13.3-.1-24.2-11.5-24.2-25.3C363 109.6 374 98 387.5 98z"/></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__bottom">
+                        <span class="footer__copyright">Copyrights &copy; 2017 Monticello Group</span>
+                        <span class="footer__copyright">Made with &#10084; by Ga Huy</span>
+                    </div>
+                </div>
+            </div>
+            <div id="contacts" class="contacts">
+                <h2 class="contacts__title">GET IN TOUCH</h2>
+                <div class="contacts__wrapper">
+                    <div class="contacts__left">
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <address class="contacts__address">91 Nolan Extensions Suite 670</address>
+                            </li>
+                            <li class="contacts__item">
+                                <a class="contacts__item-link" href="tel: +001 356-868-2454">+001 356-868-2454</a>
+                            </li>
+                            <li class="contacts__item">
+                                <a class="contacts__item-link" href="mailto:gahuy93@gmail.com">gahuy93@gmail.com</a>
+                            </li>
+                            <li class="contacts__item">
+                                <time class="contacts__item-link">From 07:05AM to 19:30PM</time>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contacts__right">
+                        <form action="#" class="contact__form">
+                            <div class="contacts__field">
+                                <input type="name" required="" placeholder="Your name..." class="contacts__input">
+                            </div>
+                            <div class="contacts__field">
+                                <input type="email" required="" placeholder="Email" class="contacts__input">
+                            </div>
+                            <div class="contacts__btn-wrap">
+                                <button class="btn contacts__btn" type="submit">SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
